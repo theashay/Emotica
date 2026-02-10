@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotica | Your Mindful Daily Companion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <meta name="description" content="Track your mood, explore zen soundscapes, and play tactile games with Emotica - the premium wellness app.">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">
+                    <img src="../assets/logo.png" alt="Emotica Logo">
+                    <span>Emotica</span>
+                </a>
+                <div class="nav-links">
+                    <a href="#features" style="text-decoration: none; color: var(--text-muted); font-weight: 600; margin-right: 20px;">Features</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.theaa.emotica" class="btn btn-primary" style="padding: 0.5rem 1.5rem;">Download</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Unlock a <span class="gradient-text">Happier</span> You</h1>
+                        <p>Experience the premium way to track your emotional journey. Immersive soundscapes, tactile games, and deep insights - all in one beautiful mindful companion.</p>
+                        <div class="hero-btns">
+                            <a href="https://play.google.com/store/apps/details?id=com.theaa.emotica" class="btn btn-primary">Download on Google Play</a>
+                        </div>
+                    </div>
+                    <div class="hero-mockup">
+                        <img src="../assets/icon.png" alt="Emotica App" style="border-radius: 80px; width: 80%; display: block; margin: 0 auto;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="container">
+            <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 4rem; font-weight: 800;">Designed for your <span class="gradient-text">Well-being</span></h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Smart Insights</h3>
+                    <p>Visualize your mood patterns over weeks and months with beautiful, easy-to-read charts.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎵</div>
+                    <h3>Zen Soundscapes</h3>
+                    <p>Immerse yourself in high-quality ambient sounds designed to help you focus or relax.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3>Tactile Games</h3>
+                    <p>Quick, satisfying interactive games to help you de-stress and reset in minutes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔔</div>
+                    <h3>Smart Reminders</h3>
+                    <p>A companion that checks in with you at the right time, helping you build a consistent habit.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Local-First Privacy</h3>
+                    <p>Your data stays on your device. We believe your mental health journey is for your eyes only.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Detailed Reports</h3>
+                    <p>Export your mood history to PDF or Excel to share with professionals or for your own records.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <a href="#" class="logo" style="color: white; opacity: 1;">
+                    <span>Emotica</span>
+                </a>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2026 Emotica App. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
