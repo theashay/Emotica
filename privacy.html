@@ -12,7 +12,7 @@
     <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
 
-<body>
+<body class="legal-page">
     <header class="scrolled">
         <div class="container">
             <nav>
@@ -20,41 +20,61 @@
                     <img src="assets/logo.png" alt="Emotica Logo">
                     <span>Emotica</span>
                 </a>
+                <a href="index.html" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.9rem;">Back to
+                    Home</a>
             </nav>
         </div>
     </header>
 
     <main class="legal-content">
-        <h1>Privacy Policy</h1>
-        <p>Last updated: February 10, 2026</p>
+        <div class="legal-card">
+            <h1>Privacy Policy</h1>
+            <p>Last updated: February 10, 2026</p>
 
-        <p>Your privacy is of the utmost importance to us. Emotica is designed with a "Local-First" architecture,
-            meaning we prioritize keeping your personal data on your device.</p>
+            <p>Your privacy is of the utmost importance to us. Emotica is designed with a "Local-First" architecture,
+                meaning we prioritize keeping your personal data on your device. This policy describes our commitment to
+                your privacy and how we handle the minimal data we do interact with.</p>
 
-        <h2>1. Data Collection</h2>
-        <p>We do not collect or store your mood entries, journal notes, or profile information on our servers. All data
-            you enter into Emotica is stored locally on your device's internal storage.</p>
+            <h2>1. Data Collection and Storage</h2>
+            <p>Emotica is an offline-capable application. We do not collect, transmit, or store your mood entries,
+                journal notes, tags, or personal patterns on any external servers. All information you enter is stored
+                exclusively in a secure SQLite database on your physical device.</p>
 
-        <h2>2. Data Usage</h2>
-        <p>The information you provide is used solely to generate your personal experience within the app, such as
-            calculating mood trends, displaying your journey timeline, and triggering reminders.</p>
+            <h2>2. Local Data Usage</h2>
+            <p>The information you provide is used strictly to provide the following local functionalities:</p>
+            <ul>
+                <li>Generating mood trend charts and insights.</li>
+                <li>Maintaining your emotional timeline.</li>
+                <li>Triggering local habit reminders/notifications.</li>
+                <li>Exporting your data into PDF or Excel formats.</li>
+            </ul>
 
-        <h2>3. Third-Party Services</h2>
-        <p>Emotica does not use third-party analytics or tracking tools that monitor your personal activity inside the
-            app. If you use the PDF export feature, the document is generated locally.</p>
+            <h2>3. Third-Party Services and Analytics</h2>
+            <p>We do not use third-party analytics (like Google Analytics or Mixpanel) that monitor your personal
+                activity inside the app. We do not sell, trade, or otherwise transfer your personally identifiable
+                information to outside parties.</p>
 
-        <h2>4. Data Deletion</h2>
-        <p>You have full control over your data. You can delete individual entries or clear all data from the settings
-            menu. Deleting the application will also remove all locally stored data.</p>
+            <h2>4. Haptic Feedback and Notifications</h2>
+            <p>The app may use your device's vibration motor and notification services. These are handled locally by the
+                Android operating system and do not involve data transmission.</p>
 
-        <h2>5. Changes to This Policy</h2>
-        <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new
-            Privacy Policy on this page.</p>
+            <h2>5. Data Deletion and Portability</h2>
+            <p>You have sovereign control over your data. You can delete individual entries or clear all application
+                data at any time through the Settings menu. Please note that once data is deleted locally, it is
+                unrecoverable as we do not keep backups.</p>
+
+            <h2>6. Compliance with Children's Online Privacy Protection Act</h2>
+            <p>As we do not collect any personal information on our servers, we are in full compliance with the
+                requirements of COPPA (Children's Online Privacy Protection Act).</p>
+
+            <h2>7. Contacting Us</h2>
+            <p>If there are any questions regarding this privacy policy, you may contact us at support@theaa.com.</p>
+        </div>
     </main>
 
     <footer>
-        <div class="container">
-            <p class="copyright">&copy; 2026 Emotica App. All rights reserved.</p>
+        <div class="container" style="text-align: center;">
+            <p class="copyright">&copy; 2026 Emotica Wellness. All rights reserved.</p>
         </div>
     </footer>
 </body>
