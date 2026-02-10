@@ -1,90 +1,73 @@
-# Emotica - React Native App
+# Emotica - Your Premium Mindful Companion
 
-A beautiful daily mood tracking app built with **Expo** and **React Native**.
+**Emotica** is a beautifully designed, high-performance mood tracking and wellness companion built with **Expo** and **React Native**. It focuses on a premium user experience with smooth animations, local-first privacy, and immersive wellness features.
 
-## Features
+## ✨ Features
 
-- 📊 **Mood Tracking** - Log your daily mood with 5 levels (Very Happy to Very Sad)
-- 📝 **Journal Notes** - Add optional notes (up to 300 characters) to capture your day
-- 🏷️ **Tags** - Categorize entries with tags like Work, Family, Health, etc.
-- 📈 **Insights** - View mood trends with charts (daily, weekly, monthly, yearly)
-- 🔥 **Streaks** - Track your consecutive logging days
-- 🤖 **AI Analysis** - Get supportive AI insights powered by Gemini
-- 💬 **AI Chat** - Talk to your wellness companion
-- 🎨 **AI Art** - Generate mood-based vibe art
-- 💾 **Backup** - Export/import your data
-- 🔒 **Privacy** - All data stored locally on device
+- 📊 **Dynamic Mood tracking** - Log your vibe with a sleek, intuitive interface.
+- � **Interactive Timeline** - View your emotional journey in a clean, scrollable timeline.
+- 📈 **Wealth of Insights** - Visualize your patterns with beautiful bar and line charts powered by `react-native-chart-kit`.
+- � **Zen Soundscape** - Immersive, high-quality audio environments for relaxation and focus.
+- 🎮 **Tactile Games** - De-stress with custom-built interactive games like *Stress Pop* and *Phoenix Fly*.
+- � **Smart Reminders** - A robust, time-neutral notification system that adapts to your logging habits.
+- 🌐 **Privacy First** - All data is stored locally on your device using `expo-sqlite`. No cloud syncing required.
+- � **Data Export** - Export your history as professional PDF reports or Excel spreadsheets.
 
-## Tech Stack
+## 🚀 Optimized Performance
 
-- **Framework**: Expo SDK 52
+- **Lightweight Build**: Optimized bundle sizes (~25MB AAB / ~38MB APK).
+- **Asset Perfection**: All audio and high-resolution icons are compressed for fast loading and minimal disk footprint.
+- **Vibrant UI**: Smooth 60fps animations powered by `react-native-reanimated` (Worklets enabled).
+
+## 🛠 Tech Stack
+
+- **Framework**: Expo SDK 54 (SDK 54)
 - **Language**: TypeScript
-- **Styling**: NativeWind (Tailwind CSS for RN)
-- **Navigation**: React Navigation
-- **Storage**: AsyncStorage
-- **Charts**: Victory Native
-- **AI**: Google Generative AI (Gemini)
+- **Database**: `expo-sqlite` (Local persistent storage)
+- **Animations**: `react-native-reanimated` v4
+- **Icons**: Lucide & Ionicons
+- **Audio**: `expo-av`
+- **Charts**: `react-native-chart-kit`
 
-## Getting Started
+## 📦 Getting Started
 
 ### Prerequisites
 
 - Node.js 18+
 - npm or yarn
-- Expo CLI (`npm install -g expo-cli`)
-- Android Studio (for Android) or Xcode (for iOS)
 
 ### Installation
 
-1. Install dependencies:
+1. **Clone & Install**:
    ```bash
-   npm install
+   npm install --legacy-peer-deps
    ```
 
-2. Set up environment variables:
+2. **Start the Engine**:
    ```bash
-   cp .env.example .env
-   # Add your Gemini API key to .env
+   npx expo start -c
    ```
 
-3. Start the development server:
-   ```bash
-   npx expo start
-   ```
+3. **Run on Device**:
+   - Use **Expo Go** for rapid development.
+   - For a production-ready experience, build an APK/AAB using EAS.
 
-4. Run on your device:
-   - Scan QR code with Expo Go app
-   - Or press `a` for Android emulator
-   - Or press `i` for iOS simulator
-
-## Project Structure
+## 📂 Project Structure
 
 ```
-mood-boost/
+emotica/
 ├── src/
-│   ├── components/       # Reusable UI components
-│   ├── screens/          # Screen components
-│   │   ├── auth/         # Login, Register, Welcome
-│   │   ├── main/         # Dashboard, Check-in, Insights
-│   │   ├── ai/           # AI Chat, AI Image
-│   │   └── settings/     # Settings, Help, Backup
-│   ├── navigation/       # Navigation configuration
-│   ├── services/         # API and storage services
-│   ├── utils/            # Utility functions
-│   ├── types/            # TypeScript definitions
-│   └── theme/            # Colors and styling
-├── app.json              # Expo configuration
-├── tailwind.config.js    # NativeWind configuration
-└── package.json
+│   ├── components/       # Reusable UI (Modals, Premium Cards, Charts)
+│   ├── screens/          # Core views (Home, Journey, Insights, Games, Settings)
+│   ├── navigation/       # Type-safe navigation stacks
+│   ├── services/         # Storage (SQLite) and Notification logic
+│   ├── theme/            # Centralized design system
+│   └── types/            # TypeScript definitions
+├── assets/               # Compressed high-res icons and splash screens
+├── music/                # Optimized OGG/MP3 soundscapes
+└── package.json          # Clean, dependency-optimized configuration
 ```
 
-## Scripts
-
-- `npm start` - Start Expo development server
-- `npm run android` - Run on Android
-- `npm run ios` - Run on iOS
-- `npm run web` - Run on web browser
-
-## License
+## 📜 License
 
 MIT
