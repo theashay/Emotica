@@ -4,181 +4,253 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emotica | Your Mindful Daily Companion</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Emotica — Your Mindful Daily Companion</title>
+    <meta name="description"
+        content="Track your mood, find calm through zen soundscapes, and play mindful games. Emotica is a premium mood tracker app — 100% private, locally stored on your device.">
+    <meta name="theme-color" content="#7C5CFC">
+    <meta property="og:title" content="Emotica — Your Mindful Daily Companion">
+    <meta property="og:description"
+        content="Premium mood tracking with immersive soundscapes, sensory games, and deep analytics. 100% private.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://myemotica.netlify.app">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    <meta name="description"
-        content="Embark on a journey of self-discovery. Emotica helps you track moods, find calm through zen soundscapes, and play mindful games. 100% private, locally stored.">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <!-- ======== HEADER ======== -->
     <header id="header">
         <div class="container">
             <nav>
                 <a href="#" class="logo">
-                    <img src="assets/icon.png" alt="Emotica Logo">
+                    <img src="assets/icon.png" alt="Emotica" width="38" height="38">
                     <span>Emotica</span>
                 </a>
-                <div class="nav-links">
+                <div class="nav-links" id="navLinks">
                     <a href="#features">Features</a>
                     <a href="#about">Philosophy</a>
-                    <a href="https://play.google.com/store/apps/details?id=com.theaa.emotica"
-                        class="btn btn-primary">Download</a>
+                    <a href="privacy.html">Privacy</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.emotica.app" class="btn btn-primary">Get
+                        the App</a>
                 </div>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                    <span></span><span></span><span></span>
+                </button>
             </nav>
         </div>
     </header>
 
     <main>
+
+        <!-- ======== HERO ======== -->
         <section class="hero">
+            <!-- Decorative floating mood emojis -->
+            <span class="mood-float mf-1" aria-hidden="true">😊</span>
+            <span class="mood-float mf-2" aria-hidden="true">🧘</span>
+            <span class="mood-float mf-3" aria-hidden="true">💜</span>
+            <span class="mood-float mf-4" aria-hidden="true">✨</span>
+
             <div class="container">
-                <div class="hero-content">
+                <div class="hero-grid">
                     <div class="hero-text">
-                        <span class="section-tag">Premium Wellness App</span>
-                        <h1>Master Your <br><span class="gradient-text">Inner World</span></h1>
-                        <p>Join thousands of users who have transformed their mental clarity. Emotica combines beautiful
-                            mood tracking with immersive relaxation tools to help you build emotional resilience every
-                            single day.</p>
-                        <div class="hero-btns">
-                            <a href="https://play.google.com/store/apps/details?id=com.theaa.emotica"
-                                class="btn btn-primary">Download on Google Play</a>
+                        <span class="section-label">✦ Premium Wellness App</span>
+                        <h1>Feel More.<br>Understand <span class="gradient-text">Yourself.</span></h1>
+                        <p>Emotica combines beautiful mood tracking, immersive zen soundscapes, and sensory de-stress
+                            games — all while keeping your data 100% private on your device.</p>
+                        <div class="hero-actions">
+                            <a href="https://play.google.com/store/apps/details?id=com.emotica.app"
+                                class="btn btn-primary">
+                                ▶ Download Free on Google Play
+                            </a>
+                            <a href="#features" class="btn btn-outline">Explore Features</a>
                         </div>
                     </div>
-                    <div class="hero-mockup">
-                        <div class="mockup-glow"></div>
-                        <img src="assets/icon.png" alt="Emotica App Display">
+                    <div class="hero-visual">
+                        <div class="app-icon-wrapper">
+                            <img src="assets/icon.png" alt="Emotica App Icon" width="300" height="300">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- ======== SOCIAL PROOF / STATS ======== -->
+        <section class="stats-bar">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>Private & Offline</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>6+</h3>
+                        <p>Zen Soundscapes</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>0</h3>
+                        <p>Ads & Trackers</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>∞</h3>
+                        <p>Mood Entries</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== FEATURES ======== -->
         <section id="features" class="features">
             <div class="container">
-                <div style="text-align: center; max-width: 800px; margin: 0 auto 5rem;">
-                    <span class="section-tag">Powerful Features</span>
-                    <h2>A Complete Ecosystem for your <span class="gradient-text">Vibe</span></h2>
-                    <p>Every element of Emotica is crafted to provide a satisfying, tactile experience that encourages
-                        regular reflection.</p>
+                <div class="features-header">
+                    <span class="section-label">✦ Core Features</span>
+                    <h2>Everything You Need to <span class="gradient-text">Thrive</span></h2>
+                    <p>Every feature is thoughtfully designed to make emotional self-awareness effortless, private, and
+                        even enjoyable.</p>
                 </div>
                 <div class="features-grid">
                     <div class="feature-card">
                         <div class="feature-icon">📊</div>
                         <h3>Deep-Dive Analytics</h3>
-                        <p>Don't just track—understand. Our advanced charting system reveals exactly how your
-                            environment, sleep, and activity correlate with your mood over months.</p>
+                        <p>Reveal mood trends over weeks and months with interactive charts. Discover how your
+                            environment, sleep, and activity correlate with how you feel.</p>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">🎵</div>
                         <h3>Immersive Soundscapes</h3>
-                        <p>Escape to a tranquil forest or a cozy rainy cafe. Our high-fidelity audio loops are
-                            scientifically curated to lower cortisol and increase focus.</p>
+                        <p>Escape to a rain-soaked cafe, a tranquil forest, or the ocean shore. High-fidelity ambient
+                            audio loops designed to calm and sharpen focus.</p>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">🕹️</div>
                         <h3>Sensory Games</h3>
-                        <p>Built-in interactive experiences like "Stress Pop" provide immediate micro-relief from
-                            anxiety through satisfying haptic-inspired visuals.</p>
+                        <p>De-stress in seconds with interactive micro-games like "Stress Pop" and "Phoenix Fly" —
+                            satisfying haptic-inspired visuals that melt anxiety away.</p>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">📝</div>
-                        <h3>Structured Journaling</h3>
-                        <p>More than just a text box. Use tags and structured prompts to capture the "why" behind your
-                            emotions without the friction of a blank page.</p>
+                        <h3>Smart Journaling</h3>
+                        <p>Go beyond a blank page. Add structured tags, contextual notes, and activity labels to capture
+                            the full story behind every emotional shift.</p>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">🔒</div>
                         <h3>Radical Privacy</h3>
-                        <p>Your mental state is yours alone. Emotica encrypts and stores all data locally. We don't have
-                            servers, which means we can't sell your data.</p>
+                        <p>All data lives exclusively in a local SQLite database on your device. No cloud sync, no
+                            analytics, no third-party SDKs peeking at your thoughts.</p>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">📄</div>
-                        <h3>Professional Exports</h3>
-                        <p>Summarize your progress into sleek, easy-to-read PDF reports. Perfect for sharing with
-                            therapists during sessions or for personal review.</p>
+                        <h3>Export & Share</h3>
+                        <p>Generate beautiful PDF or Excel reports of your mood history — ideal for therapy sessions,
+                            personal reviews, or tracking medication effects.</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- ======== PHILOSOPHY ======== -->
         <section id="about" class="philosophy">
             <div class="container">
-                <div class="philosophy-content">
-                    <div class="philosophy-image">
-                        <img src="assets/icon.png" alt="Emotica Premium Brand">
+                <div class="philosophy-grid">
+                    <div class="philosophy-visual">
+                        <div class="philosophy-badge">
+                            <img src="assets/logo.png" alt="Emotica Brand">
+                        </div>
                     </div>
                     <div class="philosophy-text">
-                        <span class="section-tag">Our Philosophy</span>
-                        <h2>Technology that <span class="gradient-text">Protects</span> Your Peace</h2>
-                        <p>In a world of constant notifications and data farming, Emotica stands as a silo for your
-                            soul. We built this app to be a tool, not a trap. No subscriptions, no dark patterns, just
-                            pure mindful reflection.</p>
-                        <ul class="philosophy-list">
-                            <li>
-                                <span style="color: var(--primary);">✓</span> 100% Offline Capability
-                            </li>
-                            <li>
-                                <span style="color: var(--primary);">✓</span> Zero Ad Tracking
-                            </li>
-                            <li>
-                                <span style="color: var(--primary);">✓</span> Battery Efficient Design
-                            </li>
+                        <span class="section-label">✦ Our Philosophy</span>
+                        <h2>Technology That <span class="gradient-text">Protects</span> Your Peace</h2>
+                        <p>In a world of infinite notifications and data harvesting, Emotica is a sanctuary. We built
+                            this app to be a tool that empowers you — not a product that profits from you. No
+                            subscriptions, no dark patterns, no compromises.</p>
+                        <ul class="check-list">
+                            <li><span class="check-icon">✓</span> 100% Offline — Works without Wi-Fi</li>
+                            <li><span class="check-icon">✓</span> Zero Ads — Zero Trackers — Zero Servers</li>
+                            <li><span class="check-icon">✓</span> Battery-Optimized — Lightweight by Design</li>
+                            <li><span class="check-icon">✓</span> Free Forever — No Hidden Costs</li>
                         </ul>
-                        <a href="https://play.google.com/store/apps/details?id=com.theaa.emotica"
-                            class="btn btn-primary">Start Your Journey Today</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.emotica.app"
+                            class="btn btn-primary">Start Your Journey</a>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- ======== CTA ======== -->
+        <section class="cta">
+            <div class="container">
+                <h2>Ready to Master Your Emotions?</h2>
+                <p>Download Emotica today and start building a happier, more self-aware version of yourself.</p>
+                <a href="https://play.google.com/store/apps/details?id=com.emotica.app" class="btn-cta">
+                    ▶ Get Emotica — It's Free
+                </a>
+            </div>
+        </section>
+
     </main>
 
+    <!-- ======== FOOTER ======== -->
     <footer>
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="#" class="logo">
-                        <img src="assets/icon.png" alt="Logo">
+                        <img src="assets/icon.png" alt="Emotica" width="38" height="38">
                         <span>Emotica</span>
                     </a>
-                    <p>Bringing premium emotional wellness tools to everyone. Your mindful sanctuary in your pocket.</p>
+                    <p>Premium emotional wellness tools, built with care. Your mindful sanctuary, always in your pocket.
+                    </p>
                 </div>
-                <div class="footer-links">
-                    <h4>Explore</h4>
-                    <ul>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#about">Philosophy</a></li>
-                        <li><a href="https://play.google.com/store/apps/details?id=com.theaa.emotica">Download</a></li>
-                    </ul>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#about">Philosophy</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.emotica.app">Download</a>
                 </div>
-                <div class="footer-links">
+                <div class="footer-col">
                     <h4>Legal</h4>
-                    <ul>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms of Service</a></li>
-                        <li><a href="mailto:support@theaa.com">Support</a></li>
-                    </ul>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="mailto:support@emotica.app">Contact Support</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Emotica Wellness. Handcrafted for a better you.</p>
+                <p>&copy; 2026 Emotica. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Privacy</a>
+                    <a href="terms.html">Terms</a>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- ======== SCRIPTS ======== -->
     <script>
+        // Sticky header
+        const header = document.getElementById('header');
         window.addEventListener('scroll', () => {
-            const header = document.getElementById('header');
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
+            header.classList.toggle('scrolled', window.scrollY > 60);
+        }, { passive: true });
+
+        // Mobile menu
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            menuToggle.setAttribute('aria-expanded', navLinks.classList.contains('open'));
+        });
+
+        // Close menu on link click
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => navLinks.classList.remove('open'));
         });
     </script>
+
 </body>
 
 </html>
